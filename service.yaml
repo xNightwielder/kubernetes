@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: k8s
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+      nodePort: 31987
+  type: NodePort
+  
+  ##KubeCtl PortForward işlemi yapılmazsa bu service.yaml çalışmaz.
