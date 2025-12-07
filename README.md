@@ -53,5 +53,11 @@ After these steps the prometheus service will start working successfully.
 > [!NOTE]
 > These terminals musn't close for maintain access.
 After these steps Prometheus and Grafana working successfully. These services accessible "localhost:9090" and "localhost:3000" addresses.
+
+6. You must login to Grafana. Your standard username and password are admin. You should to login username: admin, password: admin in Grafana. 
+
 Prometheus Interface:
 ![Prometheus Interface](images/prometheus-interface.png)
+
+Grafana Interface:
+![Prometheus Interface](images/grafana-interface.png)
