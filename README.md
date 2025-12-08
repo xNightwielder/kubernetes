@@ -15,15 +15,15 @@ This application monitoring kubernetes pods which basic Go microservices.
 
 # Usage
 1. Clone the Repository
-  ```
-  git clone git@github.com:xNightwielder/go-k8s-monitoring.git
-  cd go-k8s-monitoring
-  ```
+    ```
+    git clone git@github.com:xNightwielder/go-k8s-monitoring.git
+    cd go-k8s-monitoring
+    ```
 
 2. Apply the Kubernetes Deployment
-  ```
-   kubectl apply -f k8s-deployment.yaml
-  ```
+    ```
+     kubectl apply -f k8s-deployment.yaml
+    ```
 > [!NOTE]
 > This go application opened outside by Kubernetes Service type's NodePort. If you want to connect to the go application, you must learn which opened outside port this app. Use 'kubectl get services' command for which port opened app. Basic Go app working now which
 > after this stage. "localhost:exposedport" for connect app.
@@ -36,7 +36,7 @@ This application monitoring kubernetes pods which basic Go microservices.
   kubectl apply -f prometheus-deployment.yaml
   kubectl apply -f prometheus-service.yaml
   ```
-After these steps the prometheus service will start working successfully.
+  After these steps the prometheus service will start working successfully.
 
 4. Apply the Grafana Deployment. You must follow these steps in order:
   ```
