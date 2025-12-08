@@ -31,7 +31,7 @@ This application monitoring kubernetes pods which basic Go microservices.
 3. Apply Horizontal Pod Autoscale for automatically updates a workload resource.
 
    ```
-    kubectl apply -f horizontal-autoscale
+    kubectl apply -f horizontal-autoscale.yaml
    ```
 
 > [!IMPORTANT]
