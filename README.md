@@ -42,14 +42,14 @@ After these steps the prometheus service will start working successfully.
   kubectl apply -f grafana-service.yaml
   ```
 5. Prometheus and Grafana created to be a ClusterIP Service. This reason you must do port-forwarding process for both of them. You must open two terminal and for each one following these steps:
-   First Terminal:
-   ```
-   kubectl port-forward deployment/prometheus-deployment 9090:9090
-   ```
-   Second Terminal:
-   ```
-   kubectl port-forward deployment/grafana 3000:3000
-   ```
+  First Terminal:
+  ```
+  kubectl port-forward deployment/prometheus-deployment 9090:9090
+  ```
+  Second Terminal:
+  ```
+  kubectl port-forward deployment/grafana 3000:3000
+  ```
 > [!NOTE]
 > These terminals musn't close for maintain access.
 After these steps Prometheus and Grafana working successfully. These services accessible "localhost:9090" and "localhost:3000" addresses.
