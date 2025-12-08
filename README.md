@@ -24,9 +24,9 @@ This application monitoring kubernetes pods which basic Go microservices.
     ```
      kubectl apply -f k8s-deployment.yaml
     ```
-> [!NOTE]
-> This go application opened outside by Kubernetes Service type's NodePort. If you want to connect to the go application, you must learn which opened outside port this app. Use 'kubectl get services' command for which port opened app. Basic Go app working now which
-> after this stage. "localhost:exposedport" for connect app.
+    > [!NOTE]
+    > This go application opened outside by Kubernetes Service type's NodePort. If you want to connect to the go application, you must learn which opened outside port this app. Use 'kubectl get services' command for which port opened app. Basic Go app working now which
+    > after this stage. "localhost:exposedport" for connect app.
 
 3. Apply the Prometheus Deployment. You must follow these steps in order:
   ```
